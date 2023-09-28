@@ -1,0 +1,29 @@
+name: Build and Deploy LaTeX
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Compile LaTeX
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: main.tex 
+
+    - name: Prepare files for deployment
+      run: |
+        mkdir pdf_output  # Create a new directory named pdf_output
+        cp main.pdf pdf_output/  # Copy main.pdf to this new directory
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./pdf_output 
