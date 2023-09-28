@@ -18,12 +18,12 @@ jobs:
         root_file: main.tex 
 
     - name: Rename PDF
-      run: mv main.pdf Owen.pdf  # Rename the PDF file to Owen.pdf
+      run: mv main.pdf Owen-Fahey-Resume.pdf  # Rename the PDF file to Owen.pdf
 
     - name: Prepare files for deployment
       run: |
         mkdir pdf_output
-        cp Owen.pdf pdf_output/  # Copy Owen.pdf to this new directory
+        cp Owen-Fahey-Resume.pdf pdf_output/  # Copy Owen.pdf to this new directory
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
