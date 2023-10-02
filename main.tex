@@ -13,6 +13,10 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
+\usepackage{charter}
+% \usepackage[bitstream-charter]{mathdesign}
+% {unset}
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -85,7 +89,10 @@
 \begin{document}
 
 \begin{center}
-  \textbf{\Huge \scshape Owen Fahey} \\
+
+  \textbf{\Huge 
+  % \scshape
+Owen Fahey} \\
   \small (310) 433-3042 $\cdot$
   \href{mailto:owenfahey@uchicago.edu}{\underline{owenfahey@uchicago.edu}} $\cdot$
   \href{https://www.linkedin.com/in/owen-fahey}{\underline{linkedin.com/in/owen-fahey}} $\cdot$
@@ -109,61 +116,66 @@
         \resumeItem{Developed teamwork, leadership, and first responder skills on multiple wilderness expeditions.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-
   {
-    \vspace{-5pt}
+    \vspace{-4pt}
     \noindent\hspace{0.15in}\small\textbf{Test Scores:} SAT: 1590, ACT: 36, American Invitational Math Exam Invitee (top 5\% of AMC 12 scores)
+    \vspace{-5pt}
     }
-
 \section{Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
       \textbf{Languages}{: Python, JavaScript, TypeScript, C, Rust, HTML, CSS, Scala, SQL (Postgress)} \\
       \textbf{Python Libraries}{: OpenCV, NumPy, PIL, Matplotlib, scikit-learn, PyTorch, Flask, bpy} \\
       \textbf{Web}{: React.js, Next.js, Node.js, D3.js, NPM, Apache, Web Components, Express.js, Three.js} \\
-      \textbf{Other}{: Git, Linux, FFmpeg, JSON, YAML, Bash, VS Code, MySQL}
-    }}
+      \textbf{Other}{: Git, Github, Linux, FFmpeg, JSON, YAML, Bash, VS Code}}}
+      {\vspace{-5pt}}
   \end{itemize}
-
+  
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Jason Salavon Studio}
-      {June 2022 -- Present}
-      {Software Developer}
       {Chicago, IL}
+      {Software Developer}
+      {June 2022 -- Present}
       \resumeItemListStart
-        \resumeItem{Spearheaded system design and engineering on two art pieces created using in-house AI models, contributing 10k+ lines of code as the lead developer to the studio's codebase.}
-        \resumeItem{Architected an animation pipeline leveraging parallel computing, diffusion models, and GPT-3 API integration, enabling the production of massive animations with billions of pixels per frame.}
-        \resumeItem{Collaborated with designers to quickly transform Figma mockups into functional software prototypes.}
-        \resumeItem{Engineered a web application with a complex map interface using React.js, Leaflet, Apache, and Node.js that receives tens of thousands of  monthly visitors.}
+        \resumeItem{Spearheading system design and engineering on two art pieces created using in-house AI models, contributing 10k+ lines of code as the lead developer to the studio's codebase.}
+        \resumeItem{Architecting an animation pipeline leveraging parallel computing, diffusion models, and GPT-3 API integration, enabling the production of massive animations with billions of pixels per frame.}
+        \resumeItem{Collaborating with designers to quickly transform Figma mockups into functional software prototypes.}
+        \resumeItem{Engineering a web application with a complex map interface using React.js, Leaflet, Apache, and Node.js that receives tens of thousands of  monthly visitors.}
       \resumeItemListEnd
     \resumeSubheading
       {University of Chicago Computer Science Department}
-      {May 2023 -- Present}
-      {Research Assistant to Professor Gordon Kindlmann}
       {Chicago, IL}
+      {Research Assistant to Professor Gordon Kindlmann}
+      {May 2023 -- Present}
       \resumeItemListStart
         \resumeItem{Working to improve the effectiveness of data visualizations by accounting for differences in color perception.}
-        \resumeItem{Devised numerical algorithms to create tailored, perceptually uniform color spaces by calibrating CIELAB models.}
-        \resumeItem{Constructed an application for research studies to assess the efficacy of techniques aimed at rapidly and accurately modeling an individual's  perception of color.}
+        \resumeItem{Devising numerical algorithms to create tailored, perceptually uniform color spaces by calibrating CIELAB models.}\resumeItem{Constructing an application for research studies to assess the efficacy of techniques aimed at rapidly and accurately modeling an individual's  perception of color.}
       \resumeItemListEnd
     \resumeSubheading
       {Lexset.ai}
-      {January 2022 -- June 2022}
-      {Software Engineering Intern}
       {Brooklyn, NY}
+      {Software Engineering Intern}
+      {January 2022 -- June 2022}
       \resumeItemListStart
         \resumeItem{Enhanced a Blender-based 3D scene and synthetic data generator with dozens of client-requested features.}
         \resumeItem{Secured firm's largest client by producing a tech demo dataset of 38,000 synthetic American Sign Language images.}\resumeItem{Automated HDRI classification and tagging, reducing processing time by 75\%.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-
 \section{Projects}
-  \resumeSubHeadingListStart
+
+\resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Relational Database Storage Manager} $\cdot$ \emph{Rust}}{January 2023 -- March 2023}
+          {\textbf{Voxel Subdivider} $\cdot$ \emph{JavaScript, Three.js}}{\emph{September 2023}}
+          \resumeItemListStart
+            \resumeItem{Developed a web app to interactively subdivide a single voxel into an intricate voxel model.}
+            \resumeItem{Implemented the logic to convert glTF 3D models into voxelized form.}
+            \resumeItemListEnd
+            
+      \resumeProjectHeading
+          {\textbf{Relational Database Storage Manager} $\cdot$ \emph{Rust}}{\emph{January 2023 -- March 2023}}
           \resumeItemListStart
              \resumeItem{Built a functioning storage manager for a relational database using heap files.}
         \resumeItem{Designed pages with slotted storage to maximize space efficiency.}
@@ -171,15 +183,12 @@
           \resumeItemListEnd
 
     \resumeProjectHeading
-          {\textbf{Music Overlap Analyzer} $\cdot$ \emph{Python, Flask, OAuth, scikit-learn}}{April 2022}
+          {\textbf{Music Overlap Analyzer} $\cdot$ \emph{Python, Flask, OAuth, scikit-learn}}{\emph{April 2022}}
           \resumeItemListStart
              \resumeItem{Developed an app to identify songs and artists mutually listened to by two users.}
             \resumeItem{Employed k-means clustering to generate a Spotify playlist based on overlapping musical preferences.}
           \resumeItemListEnd
+\resumeSubHeadingListEnd
 
-  \resumeSubHeadingListEnd
-     {
-    \vspace{-4pt}
-    \noindent\hspace{0.15in}\small\textbf{Personal Website} $\cdot$ For additional projects, visit \href{https://owenfahey.com}{\underline{owenfahey.com}}.
-    }
+  
 \end{document}
