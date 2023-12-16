@@ -100,6 +100,43 @@ Owen Fahey} \\
   \href{https://owenfahey.com}{\underline{owenfahey.com}}
 \end{center}
 
+  
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jason Salavon Studio}
+      {Chicago, IL}
+      {Software Developer}
+      {June 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Spearheading system design and engineering on multiple fine art pieces created using in-house GAN and style transfer models, contributing 10k+ lines of Python and 5k+ lines of JavaScript to the studio's codebase.}
+        \resumeItem{Developing an advanced internal library of image processing tools using OpenCV, diffusion models, and parallel computing, facilitating the creation of animations with billions of pixels per frame.}
+        \resumeItem{Collaborating with designers to quickly transform Figma mockups into functional software prototypes.}
+        \resumeItem{Engineering a web application with a highly customized map interface using React.js, Leaflet, Apache, and Node.js that receives 10k+  monthly visitors.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Chicago Computer Science Department}
+      {Chicago, IL}
+      {Research Assistant to Professor Gordon Kindlmann}
+      {May 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Working to improve the effectiveness of data visualizations by accounting for differences in color perception.}
+        \resumeItem{Refining the CIELAB model to produce perceptually uniform color spaces tailored to individual users.}
+        \resumeItem{Constructing an application for research studies to assess the efficacy of techniques aimed at rapidly and accurately modeling an individual's color perception.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Lexset.ai}
+      {Brooklyn, NY}
+      {Software Engineering Intern}
+      {January 2022 -- June 2022}
+      \resumeItemListStart
+        \resumeItem{Enhanced a Python and Blender-based 3D scene and synthetic data generator with dozens of client-requested features.}\resumeItem{Secured firm's largest client by creating a dataset of 38,000 synthetic American Sign Language images as a tech demo.}
+        \resumeItem{Automated asset and image tagging, reducing processing time by 75\%.}
+        \resumeItem{Monitored and debugged CoreWeave GPU instances ensuring optimal performance in machine learning workflows. }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -107,7 +144,8 @@ Owen Fahey} \\
       {Bachelor of Science in Computer Science \& Bachelor of Arts in Philosophy}{Expected June 2024}
       \resumeItemListStart
         \resumeItem{CS GPA: 3.9}
-        \resumeItem {Specialization: Machine Learning}
+        % \resumeItem
+        % \resumeItem {Specialization: Machine Learning}
         \resumeItem{{Selected Coursework:} 
         Honors Algorithms,
         Software Development,
@@ -120,7 +158,7 @@ Owen Fahey} \\
         Data Science,
         Mathematics of Machine Learning,
         Computer Vision
-        
+        % 
         % Programming Languages
         % Scientific Visualization,
         }
@@ -145,13 +183,13 @@ Owen Fahey} \\
       \textbf{Languages}{:
       Python,
       JavaScript,
-      TypeScript,
       C,
       Rust,
       HTML,
       CSS,
       Scala,
-      SQL (Postgress)} \\
+      TypeScript,
+      SQL} \\
       \textbf{Python Libraries}{: 
       OpenCV,
       NumPy,
@@ -171,7 +209,8 @@ Owen Fahey} \\
       Apache,
       Web Components,
       Express.js,
-      Three.js
+      Three.js,
+      PyTorch
       }
       \\
       \textbf{Other}{:
@@ -187,44 +226,23 @@ Owen Fahey} \\
         }}}
       {\vspace{-5pt}}
   \end{itemize}
-  
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Jason Salavon Studio}
-      {Chicago, IL}
-      {Software Developer}
-      {June 2022 -- Present}
-      \resumeItemListStart
-        \resumeItem{Spearheading system design and engineering on multiple fine art pieces created using in-house GAN and style transfer models, contributing 15k+ lines to the studio's primary codebase.}
-        \resumeItem{Architecting a GPU-based animation pipeline using parallel computing, diffusion models, and data engineering, enabling the production of large-scale animations with billions of pixels per frame.}
-        \resumeItem{Collaborating with designers to quickly transform Figma mockups into functional software prototypes.}
-        \resumeItem{Engineering a web application with a highly customized map interface using React.js, Leaflet, Apache, and Node.js that receives tens of thousands of  monthly visitors.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {University of Chicago Computer Science Department}
-      {Chicago, IL}
-      {Research Assistant to Professor Gordon Kindlmann}
-      {May 2023 -- Present}
-      \resumeItemListStart
-        \resumeItem{Working to improve the effectiveness of data visualizations by accounting for differences in color perception.}
-        \resumeItem{Devising numerical algorithms to create tailored, perceptually uniform color spaces by calibrating CIELAB models.}\resumeItem{Constructing an application for research studies to assess the efficacy of techniques aimed at rapidly and accurately modeling an individual's  perception of color.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Lexset.ai}
-      {Brooklyn, NY}
-      {Software Engineering Intern}
-      {January 2022 -- June 2022}
-      \resumeItemListStart
-        \resumeItem{Enhanced a Blender-based 3D scene and synthetic data generator with dozens of client-requested features.}
-        \resumeItem{Secured firm's largest client by creating a dataset of 38,000 synthetic American Sign Language images as a tech demo.}\resumeItem{Automated HDRI classification and tagging, reducing processing time by 75\%.}
-        \resumeItem{Monitored and debugged CoreWeave GPU instances ensuring optimal performance in machine learning workflows. }
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
 \section{Projects}
 
 \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+          {\textbf{Every Game of Tic Tac Toe All At Once} $\cdot$ \emph{Python, JavaScript}}{\emph{August 2023}}
+    \resumeItemListStart
+    \resumeItem {
+        Created a website displaying all 255,168 games of Tic Tac Toe playing simultaneously.
+    }
+    \resumeItem {
+        Implemented a search feature allowing users to quickly locate and view any specific game.
+    }
+      
+    \resumeItemListEnd
+    
       % \resumeProjectHeading
       %     {\textbf{Voxel Subdivider} $\cdot$ \emph{JavaScript, Three.js}}{\emph{September 2023}}
       %     \resumeItemListStart
@@ -252,6 +270,7 @@ Owen Fahey} \\
       \resumeItem{Implemented an interpreter for a novel language with mutable memory, exceptions, and type checking / melding.}
     \resumeItemListEnd
 
+
     \resumeProjectHeading
           {\textbf{Music Overlap Analyzer} $\cdot$ \emph{Python, Flask, OAuth, scikit-learn}}{\emph{April 2022}}
           \resumeItemListStart
@@ -259,6 +278,5 @@ Owen Fahey} \\
             \resumeItem{Employed k-means clustering to generate a Spotify playlist based on overlapping musical preferences.}
           \resumeItemListEnd
 \resumeSubHeadingListEnd
-
   
 \end{document}
