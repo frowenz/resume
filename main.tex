@@ -109,10 +109,12 @@ Owen Fahey} \\
       {Software Developer}
       {June 2022 -- Present}
       \resumeItemListStart
-        \resumeItem{Spearheading system design and engineering on multiple fine art pieces created using in-house GAN and style transfer models, contributing 10k+ lines of Python and 5k+ lines of JavaScript to the studio's codebase.}
-        \resumeItem{Developing an advanced internal library of image processing tools using OpenCV, diffusion models, and parallel computing, facilitating the creation of animations with billions of pixels per frame.}
-        \resumeItem{Collaborating with designers to quickly transform Figma mockups into functional software prototypes.}
-        \resumeItem{Engineering a web application with a highly customized map interface using React.js, Leaflet, Apache, and Node.js that receives 10k+  monthly visitors.}
+
+        \resumeItem{Leading system design and engineering on computational art pieces created using in-house GAN and style transfer models, contributing 10k+ lines of Python and 5k+ lines of JavaScript to the art-research lab's codebase.}
+        \resumeItem{Developing an internal library of image and video processing tools using OpenCV, diffusion models, and parallel computing, facilitating the creation of animations with billions of pixels per frame.}
+        % \resumeItem{Wrote scripts to download movies and extract pose estimations, depth maps, and Canny edges from their frames. }
+        % \resumeItem{Collaborating with designers to quickly transform Figma mockups into functional software prototypes.}
+        \resumeItem{Engineering a web application with a highly customized map interface using React.js, Leaflet, Apache, and Node.js that receives thousands  monthly visitors.}
       \resumeItemListEnd
     \resumeSubheading
       {University of Chicago Computer Science Department}
@@ -122,7 +124,7 @@ Owen Fahey} \\
       \resumeItemListStart
         \resumeItem{Working to improve the effectiveness of data visualizations by accounting for differences in color perception.}
         \resumeItem{Refining the CIELAB model to produce perceptually uniform color spaces tailored to individual users.}
-        \resumeItem{Constructing an application for research studies to assess the efficacy of techniques aimed at rapidly and accurately modeling an individual's color perception.}
+        \resumeItem{Constructing an application for research studies to compare the efficacy of techniques aimed at rapidly and accurately modeling an individual's color perception.}
       \resumeItemListEnd
     \resumeSubheading
       {Lexset.ai}
@@ -130,12 +132,12 @@ Owen Fahey} \\
       {Software Engineering Intern}
       {January 2022 -- June 2022}
       \resumeItemListStart
-        \resumeItem{Enhanced a Python and Blender-based 3D scene and synthetic data generator with dozens of client-requested features.}\resumeItem{Secured firm's largest client by creating a dataset of 38,000 synthetic American Sign Language images as a tech demo.}
+        \resumeItem{Added dozens of client-requested features to Blender-based 3D scene generator, facilitating the creation of photorealistic synthetic image datasets to improve downstream computer vision tasks.} \resumeItem{Secured the company's largest client by creating a dataset of 38,000 synthetic American Sign Language images.}
+        \resumeItem{Reviewed and implemented advanced techniques from computer vision papers.}
+        % \resumeItem{Monitored and debugged CoreWeave GPU instances ensuring optimal performance in machine learning workflows. }
         \resumeItem{Automated asset and image tagging, reducing processing time by 75\%.}
-        \resumeItem{Monitored and debugged CoreWeave GPU instances ensuring optimal performance in machine learning workflows. }
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-
 
 \section{Education}
   \resumeSubHeadingListStart
@@ -143,24 +145,26 @@ Owen Fahey} \\
       {The University of Chicago}{Chicago, IL}
       {Bachelor of Science in Computer Science \& Bachelor of Arts in Philosophy}{Expected June 2024}
       \resumeItemListStart
-        \resumeItem{CS GPA: 3.9}
+        \resumeItem{CS GPA: 3.90}
         % \resumeItem
         % \resumeItem {Specialization: Machine Learning}
         \resumeItem{{Selected Coursework:} 
         Honors Algorithms,
-        Software Development,
         Computer Systems,
         Database Systems,
-        Probability,
-        Deep Learning Systems,
+        Software Development,
+        % Probability,
+        Deep Learning Systems (graduate),
         % Discrete Math,
-        Data Visualization,
-        Data Science,
+        % Data Visualization,
+        % Data Science,
         Mathematics of Machine Learning,
-        Computer Vision
+        Computer Vision,
         % 
         % Programming Languages
         % Scientific Visualization,
+        % Machine Learning
+        % Computational Geometry
         }
       \resumeItemListEnd
 
@@ -185,32 +189,32 @@ Owen Fahey} \\
       JavaScript,
       C,
       Rust,
-      HTML,
-      CSS,
+      % HTML,
+      % CSS,
       Scala,
-      TypeScript,
+      % TypeScript,
       SQL} \\
       \textbf{Python Libraries}{: 
+      PyTorch,
+      scikit-learn,
       OpenCV,
       NumPy,
       PIL,
-      Matplotlib,
-      scikit-learn,
-      PyTorch,
-      Flask,
-      Django,
-      bpy} \\
-      \textbf{Web}{: 
-      React.js, 
-      Next.js,
-      Node.js,
-      D3.js,
-      NPM, 
-      Apache,
-      Web Components,
-      Express.js,
-      Three.js,
-      PyTorch
+      % Matplotlib,
+      % Flask,
+      Django
+      % bpy
+      % } \\ \textbf{Web}{: 
+      % React.js, 
+      % Next.js,
+      % Node.js,
+      % D3.js,
+      % NPM, 
+      % Apache,
+      % Web Components,
+      % Express.js,
+      % Three.js,
+      % PyTorch
       }
       \\
       \textbf{Other}{:
@@ -218,11 +222,12 @@ Owen Fahey} \\
         CI/CD,
         Git, 
         Github,
-        REST,
-        JSON, 
-        YAML,
+        % REST,
+        % JSON, 
+        % YAML,
         Bash,
-        FFmpeg 
+        FFmpeg
+        % \LaTeX
         }}}
       {\vspace{-5pt}}
   \end{itemize}
@@ -232,7 +237,7 @@ Owen Fahey} \\
 \resumeSubHeadingListStart
 
     \resumeProjectHeading
-          {\textbf{Every Game of Tic Tac Toe All At Once} $\cdot$ \emph{Python, JavaScript}}{\emph{August 2023}}
+          {\textbf{Every Game of Tic Tac Toe All at Once} $\cdot$ \emph{Python, JavaScript}}{\emph{August 2023}}
     \resumeItemListStart
     \resumeItem {
         Created a website displaying all 255,168 games of Tic Tac Toe playing simultaneously.
@@ -269,14 +274,22 @@ Owen Fahey} \\
     \resumeItem{Engineered an interpreter for the simply-typed lambda calculus, complete with a scanner, parser, and evaluator.}
       \resumeItem{Implemented an interpreter for a novel language with mutable memory, exceptions, and type checking / melding.}
     \resumeItemListEnd
+    
+  % \resumeProjectHeading
+  %         {\textbf{Eyes Follow Mouse} $\cdot$ \emph{Scala}}{\emph{October 2022}}
+  %   \resumeItemListStart
+  %   \resumeItem{Engineered an interpreter for the simply-typed lambda calculus, complete with a scanner, parser, and evaluator.}
+  %     \resumeItem{Implemented an interpreter for a novel language with mutable memory, exceptions, and type checking / melding.}
+  %   \resumeItemListEnd
 
 
-    \resumeProjectHeading
-          {\textbf{Music Overlap Analyzer} $\cdot$ \emph{Python, Flask, OAuth, scikit-learn}}{\emph{April 2022}}
-          \resumeItemListStart
-             \resumeItem{Developed an app to identify songs and artists mutually listened to by two users.}
-            \resumeItem{Employed k-means clustering to generate a Spotify playlist based on overlapping musical preferences.}
-          \resumeItemListEnd
+  %   \resumeProjectHeading
+  %         {\textbf{Music Overlap Analyzer} $\cdot$ \emph{Python, Flask, OAuth, scikit-learn}}{\emph{April 2022}}
+  %         \resumeItemListStart
+  %            \resumeItem{Developed an app to identify songs and artists mutually listened to by two users.}
+  %           \resumeItem{Employed k-means clustering to generate a Spotify playlist based on overlapping musical preferences.}
+  %         \resumeItemListEnd
+          
 \resumeSubHeadingListEnd
   
 \end{document}
