@@ -89,8 +89,8 @@
 
 \begin{document}
 
-\begin{center}
 
+\begin{center}
   \textbf{\Huge 
   % \scshape
 Owen Fahey} \\
@@ -109,22 +109,21 @@ Owen Fahey} \\
       {Software Developer}
       {June 2022 -- Present}
       \resumeItemListStart
-
-        \resumeItem{Leading system design and engineering on computational art pieces created using in-house GAN and style transfer models, contributing 10k+ lines of Python and 5k+ lines of JavaScript to the art-research lab's codebase.}
+        \resumeItem{Leading system design and engineering on large-scale computational art pieces, contributing 10,000+ lines of Python and 5,000+ lines of JavaScript to the art-research lab's codebase.}
         \resumeItem{Developing an internal library of image and video processing tools using OpenCV, diffusion models, and parallel computing, facilitating the creation of animations with billions of pixels per frame.}
         % \resumeItem{Creating scripts to automate movie downloads and perform tasks such as optical flow, pose, and depth estimation.}
-        \resumeItem{Collaborating with designers to quickly transform Figma mockups into functional software prototypes.}
+        % \resumeItem{Collaborating with designers to quickly transform Figma mockups into functional software prototypes.}
         \resumeItem{Engineering a web application with a highly customized map interface using React.js, Leaflet, Apache, and Node.js that receives thousands of monthly visitors.}
       \resumeItemListEnd
     \resumeSubheading
       {University of Chicago Computer Science Department}
       {Chicago, IL}
-      {Research Assistant to Professor Gordon Kindlmann}
+      {Research and Teaching Assistant for Professor Gordon Kindlmann}
       {May 2023 -- Present}
       \resumeItemListStart
         \resumeItem{Working to improve the effectiveness of data visualizations by accounting for differences in color perception.}
-        \resumeItem{Refining the CIELAB model to produce perceptually uniform color spaces tailored to individual users.}
-        \resumeItem{Constructing an application for research studies to compare the efficacy of techniques aimed at rapidly and accurately modeling an individual's color perception.}
+        \resumeItem{Comparing the efficacy of techniques aimed at rapidly and accurately modeling an individual's color perception.}
+        \resumeItem{Serving as a teacher's assistant for Data Visualization, a class with 50+ students.}
       \resumeItemListEnd
     \resumeSubheading
       {Lexset.ai}
@@ -132,8 +131,9 @@ Owen Fahey} \\
       {Software Engineering Intern}
       {January 2022 -- June 2022}
       \resumeItemListStart
-        \resumeItem{Added dozens of client-requested features to Blender-based 3D scene generator, facilitating the creation of photorealistic synthetic image datasets to improve downstream computer vision tasks.} \resumeItem{Secured the company's largest client by creating a dataset of 38,000 synthetic American Sign Language images.}
-        \resumeItem{Reviewed and implemented advanced techniques from computer vision papers.}
+        \resumeItem{Added dozens of client-requested features to Blender-based 3D scene generator, facilitating the creation of photorealistic synthetic image datasets to improve downstream computer vision tasks.} \resumeItem{
+        Created a dataset of 38,000 synthetic sign language images, instrumental in securing the company's largest client.}
+        % \resumeItem{Reviewed and implemented advanced techniques from computer vision papers.}
         % \resumeItem{Monitored and debugged CoreWeave GPU instances ensuring optimal performance in machine learning workflows. }
         \resumeItem{Automated asset and image tagging, reducing processing time by 75\%.}
       \resumeItemListEnd
@@ -143,9 +143,9 @@ Owen Fahey} \\
   \resumeSubHeadingListStart
     \resumeSubheading
       {The University of Chicago}{Chicago, IL}
-      {Bachelor of Science in Computer Science \& Bachelor of Arts in Philosophy}{Expected June 2024}
+      {Bachelor's in Computer Science with Honors \& Bachelor's in Philosophy}{Expected June 2024}
       \resumeItemListStart
-        \resumeItem{CS GPA: 3.90}
+        \resumeItem{CS GPA: 3.91}
         % \resumeItem
         % \resumeItem {Specialization: Machine Learning}
         \resumeItem{{Selected Coursework:} 
@@ -154,11 +154,11 @@ Owen Fahey} \\
         Software Development,
         % 
         Database Systems,
-        Computer Systems,
+        Computer Systems
         % Deep Learning Systems (graduate),
         % 
         % Mathematics of Machine Learning,
-        Computer Vision,
+        % Computer Vision,
         % 
         % Scientific Visualization,
         % 
@@ -169,7 +169,7 @@ Owen Fahey} \\
         % Data Visualization,
         % 
         % Data Science,
-        Programming Languages
+        % Programming Languages
         }
       \resumeItemListEnd
 
@@ -201,7 +201,7 @@ Owen Fahey} \\
       SQL} \\
       \textbf{Python Libraries}{: 
       PyTorch,
-      scikit-learn,
+      % scikit-learn,
       OpenCV,
       NumPy,
       PIL,
@@ -209,16 +209,17 @@ Owen Fahey} \\
       % Flask,
       Django
       % bpy
-      } \\ \textbf{Web}{: 
-      React.js, 
-      Next.js,
-      Node.js,
-      D3.js,
-      Apache,
-      Web Components,
-      Express.js,
-      Three.js
-      }
+      } 
+      % \\ \textbf{Web}{: 
+      % React.js, 
+      % Next.js,
+      % Node.js,
+      % D3.js,
+      % Apache,
+      % Web Components,
+      % Express.js,
+      % Three.js
+      % }
       \\
       \textbf{Other}{:
         Linux,
@@ -249,6 +250,12 @@ Owen Fahey} \\
     %     Implemented a search feature allowing users to quickly locate and view any specific game.
     % }
     % \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Scientific Visualizations Tools} $\cdot$ \emph{C, WebAssembly}}{\emph{January 2024 - Present}}
+          \resumeItemListStart
+          \resumeItem{Creating visualization tools for topographic mapping, multithreaded volume rendering, and vector field imaging.}
+          \resumeItem{Adapting C-based visualization tools for web use with WebAssembly and WebAssembly System Interface.}
+          \resumeItemListEnd
     
       \resumeProjectHeading
           {\textbf{Voxel Subdivider} $\cdot$ \emph{JavaScript, Three.js}}{\emph{September 2023}}
@@ -260,8 +267,11 @@ Owen Fahey} \\
       \resumeProjectHeading
           {\textbf{Relational Database Storage Manager} $\cdot$ \emph{Rust}}{\emph{January 2023 -- March 2023}}
           \resumeItemListStart
-             \resumeItem{Designed a functioning storage manager and slotted pages for a relational database using heap files.}
-        \resumeItem{Implemented query operators such as AGGREGATE, GROUP BY, and JOIN from scratch.}
+             \resumeItem{Engineered a high-performance storage manager, enabling efficient queries, concurrency, and durability.}
+            \resumeItem{Implemented query functions such as AGGREGATE, GROUP BY, and JOIN from scratch.}
+             
+             % \resumeItem{Implemented core functionalities for a high-performance relational database such as designing slotted pages, serialization, and  .} 
+             % % \resumeItem{Designed a functioning storage manager and slotted pages for a relational database using heap files.}
           \resumeItemListEnd
 
       % \resumeProjectHeading
@@ -270,12 +280,12 @@ Owen Fahey} \\
       %       \resumeItem{Engineered a machine learning model to predict flight delays, achieving a high AUC of 0.78.}
       %       \resumeItemListEnd
 
-  \resumeProjectHeading
-          {\textbf{Programming Language Interpreters} $\cdot$ \emph{Scala}}{\emph{October 2022}}
-    \resumeItemListStart
-    \resumeItem{Engineered an interpreter for the simply-typed lambda calculus, complete with a scanner, parser, and evaluator.}
-      \resumeItem{Engineered an interpreter for a novel language with mutable memory, exceptions, and type checking / melding.}
-    \resumeItemListEnd
+  % \resumeProjectHeading
+  %         {\textbf{Programming Language Interpreters} $\cdot$ \emph{Scala}}{\emph{October 2022}}
+  %   \resumeItemListStart
+  %   \resumeItem{Engineered an interpreter for the simply-typed lambda calculus, complete with a scanner, parser, and evaluator.}
+  %     \resumeItem{Engineered an interpreter for a novel language with mutable memory, exceptions, and type checking / melding.}
+  %   \resumeItemListEnd
     
   % \resumeProjectHeading
   %         {\textbf{Eyes Follow Mouse} $\cdot$ \emph{Scala}}{\emph{October 2022}}
@@ -283,8 +293,7 @@ Owen Fahey} \\
   %   \resumeItem{Engineered an interpreter for the simply-typed lambda calculus, complete with a scanner, parser, and evaluator.}
   %     \resumeItem{Implemented an interpreter for a novel language with mutable memory, exceptions, and type checking / melding.}
   %   \resumeItemListEnd
-
-
+  
     % \resumeProjectHeading
     %       {\textbf{Music Overlap Analyzer} $\cdot$ \emph{Python, Flask, OAuth, scikit-learn}}{\emph{April 2022}}
     %       \resumeItemListStart
