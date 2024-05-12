@@ -37,7 +37,9 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-9pt}\scshape\raggedright\large
+  \vspace{-9pt}
+  % \scshape
+  \raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -109,33 +111,32 @@ Owen Fahey} \\
       {Software Developer}
       {June 2022 -- Present}
       \resumeItemListStart
-        \resumeItem{Leading system design and engineering on large-scale computational art pieces, contributing 10,000+ lines of Python and 5,000+ lines of JavaScript to the art-research lab's codebase.}
-        \resumeItem{Developing an internal library of image and video processing tools using OpenCV, diffusion models, and parallel computing, facilitating the creation of animations with billions of pixels per frame.}
-        % \resumeItem{Creating scripts to automate movie downloads and perform tasks such as optical flow, pose, and depth estimation.}
-        % \resumeItem{Collaborating with designers to quickly transform Figma mockups into functional software prototypes.}
-        \resumeItem{Engineering a web application with a highly customized map interface using React.js, Leaflet, Apache, and Node.js that receives thousands of monthly visitors.}
+        \resumeItem{Led system design and engineering on large-scale computational art pieces, contributing 10,000+ lines of Python and 5,000+ lines of JavaScript to the art-research lab's codebase.}
+        \resumeItem{Architected internal video processing tools and pipelines utilizing OpenCV, diffusion models, and GPU programming, enabling the production of animations with billions of pixels per frame.}
+        \resumeItem{Engineered a web application that integrates 43,700  video tiles into a synchronized map interface using React.js, Apache, and Node.js.}
+        \resumeItem{Collaborated with a team of 3 designers to quickly transform Figma mockups into functional software prototypes.}
+        
       \resumeItemListEnd
     \resumeSubheading
       {University of Chicago Computer Science Department}
       {Chicago, IL}
-      {Research and Teaching Assistant for Professor Gordon Kindlmann}
+      {Research Assistant for Professor Gordon Kindlmann}
       {May 2023 -- Present}
       \resumeItemListStart
-        \resumeItem{Working to improve the effectiveness of data visualizations by accounting for differences in color perception.}
-        \resumeItem{Comparing the efficacy of techniques aimed at rapidly and accurately modeling an individual's color perception.}
-        \resumeItem{Serving as a teacher's assistant for Data Visualization, a class with 50+ students.}
+        \resumeItem{Conducted A/B testing to compare the speed and accuracy of color perception modeling techniques.}
+        \resumeItem{Improved data visualization efficacy by calibrating color spaces like CIELAB to be genuinely perceptually uniform.}\resumeItem{Served as a teacher's assistant for Data Visualization, writing assignments and holding office hours for 50+ students.}
       \resumeItemListEnd
     \resumeSubheading
       {Lexset.ai}
       {Brooklyn, NY}
-      {Software Engineering Intern}
+      {Software Engineer Intern}
       {January 2022 -- June 2022}
       \resumeItemListStart
-        \resumeItem{Added dozens of client-requested features to Blender-based 3D scene generator, facilitating the creation of photorealistic synthetic image datasets to improve downstream computer vision tasks.} \resumeItem{
+        \resumeItem{Added dozens of client-requested features to Blender-based 3D scene generator, facilitating the creation of photorealistic synthetic image datasets for downstream computer vision tasks at scale.} \resumeItem{
         Created a dataset of 38,000 synthetic sign language images, instrumental in securing the company's largest client.}
         % \resumeItem{Reviewed and implemented advanced techniques from computer vision papers.}
-        % \resumeItem{Monitored and debugged CoreWeave GPU instances ensuring optimal performance in machine learning workflows. }
-        \resumeItem{Automated asset and image tagging, reducing processing time by 75\%.}
+        \resumeItem{Monitored and debugged CoreWeave GPU instances ensuring optimal performance in machine learning workflows. }
+        \resumeItem{Implemented an automated asset and image tagging system, reducing processing time by 80\%.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -146,28 +147,21 @@ Owen Fahey} \\
       {Bachelor's in Computer Science with Honors \& Bachelor's in Philosophy}{Expected June 2024}
       \resumeItemListStart
         \resumeItem{CS GPA: 3.91}
-        % \resumeItem
-        % \resumeItem {Specialization: Machine Learning}
+        \resumeItem{Specialization: Data Science}
         \resumeItem{{Selected Coursework:} 
         Honors Algorithms,
-        % 
-        Software Development,
-        % 
+        % Software Development,
         Database Systems,
-        Computer Systems
-        % Deep Learning Systems (graduate),
-        % 
+        % Probability,
+        Computer Systems,
+        Deep Learning Systems (graduate)
         % Mathematics of Machine Learning,
         % Computer Vision,
-        % 
         % Scientific Visualization,
-        % 
         % Probability,
         % Discrete Math,
         % Computational Geometry
-        % 
         % Data Visualization,
-        % 
         % Data Science,
         % Programming Languages
         }
@@ -178,12 +172,12 @@ Owen Fahey} \\
       {National Outdoor Leadership School}{Lander, WY}
       {Fall Semester in the Rockies}{August 2021 -- November 2021}
       \resumeItemListStart
-        \resumeItem{Developed teamwork, leadership, and first responder skills on multiple wilderness expeditions.}
+        \resumeItem{Developed teamwork, leadership, and first responder skills on wilderness expeditions.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
   {
-    \vspace{-4pt}
-    \noindent\hspace{0.15in}\small\textbf{Test Scores:} SAT: 1590, ACT: 36, American Invitational Math Exam Invitee (top 5\% of AMC 12 scores)
+    \vspace{-5pt}
+    \noindent\hspace{0.15in}\small\textbf{Test Scores:} SAT: 1590, American Invitational Math Exam Invitee (top 5\% of AMC 12 scores)
     \vspace{-5pt}
     }
 \section{Skills}
@@ -206,8 +200,9 @@ Owen Fahey} \\
       NumPy,
       PIL,
       % Matplotlib,
-      % Flask,
-      Django
+      Flask,
+      Django,
+      Jupyter Notebook
       % bpy
       } 
       % \\ \textbf{Web}{: 
@@ -225,7 +220,7 @@ Owen Fahey} \\
         Linux,
         CI/CD,
         Git, 
-        Github,
+        GitHub,
         % REST,
         % JSON, 
         % YAML,
@@ -253,16 +248,16 @@ Owen Fahey} \\
     \resumeProjectHeading
           {\textbf{Scientific Visualizations Tools} $\cdot$ \emph{C, WebAssembly}}{\emph{January 2024 - Present}}
           \resumeItemListStart
-          \resumeItem{Creating visualization tools for topographic mapping, multithreaded volume rendering, and vector field imaging.}
-          \resumeItem{Adapting C-based visualization tools for web use with WebAssembly and WebAssembly System Interface.}
+          \resumeItem{Created visualization tools for topographic mapping, multithreaded volume rendering, and vector field imaging.}
+          \resumeItem{Adapted C-based visualization tools for web use with WebAssembly and WebAssembly System Interface.}
           \resumeItemListEnd
     
-      \resumeProjectHeading
-          {\textbf{Voxel Subdivider} $\cdot$ \emph{JavaScript, Three.js}}{\emph{September 2023}}
-          \resumeItemListStart
-            \resumeItem{Developed a web application to interactively subdivide a single voxel into an intricate voxel model.}
-            \resumeItem{Implemented the logic to convert glTF 3D models into voxelized form.}
-            \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Voxel Subdivider} $\cdot$ \emph{JavaScript, Three.js}}{\emph{September 2023}}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a web application to interactively subdivide a single voxel into an intricate voxel model.}
+      %       \resumeItem{Implemented the logic to convert glTF 3D models into voxelized form.}
+      %       \resumeItemListEnd
       
       \resumeProjectHeading
           {\textbf{Relational Database Storage Manager} $\cdot$ \emph{Rust}}{\emph{January 2023 -- March 2023}}
@@ -294,13 +289,21 @@ Owen Fahey} \\
   %     \resumeItem{Implemented an interpreter for a novel language with mutable memory, exceptions, and type checking / melding.}
   %   \resumeItemListEnd
   
-    % \resumeProjectHeading
-    %       {\textbf{Music Overlap Analyzer} $\cdot$ \emph{Python, Flask, OAuth, scikit-learn}}{\emph{April 2022}}
-    %       \resumeItemListStart
-    %          \resumeItem{Developed an app to identify songs and artists mutually listened to by two users.}
-    %         \resumeItem{Employed k-means clustering to generate a Spotify playlist based on overlapping musical preferences.}
-    %       \resumeItemListEnd
-          
-\resumeSubHeadingListEnd
+    \resumeProjectHeading
+          {\textbf{Music Overlap Analyzer} $\cdot$ \emph{Python, OAuth, scikit-learn}}{\emph{April 2022}}
+          \resumeItemListStart
+             \resumeItem{Built an application to identify songs and artists mutually listened to by two users.}
+            \resumeItem{Employed k-means clustering to generate Spotify playlists based on overlapping musical preferences.}
+          \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
   
+% \section{Interests}
+% {
+%     % \vspace{-4pt}
+%     % \noindent\hspace{0.15in}\small Climbing, backpacking, live music
+%     % \vspace{-5pt}
+% }
+
+
 \end{document}
